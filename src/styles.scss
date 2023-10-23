@@ -1,1 +1,98 @@
 /* You can add global styles to this file, and also import other style files */
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+
+
+
+
+
+* {
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+}
+body {
+	margin:0;
+	padding:0;
+}
+.clear {
+	clear: both;
+}
+
+a {
+	font-family: inherit;
+	font-size: inherit;
+	line-height: normal;
+	color: inherit;
+	text-decoration:none;
+    font-family: 'Poppins', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold !important;
+	margin: 0 0 20px 0;
+	padding: 0;
+
+}
+p, li, ul, ol, blockquote {
+    font-family: 'Poppins', sans-serif;
+	margin: 0 0 10px 0;
+	padding: 0;
+}
+p {
+	margin: 0 0 0 20px 0;
+    font-family: 'Poppins', sans-serif;
+}
+ul, ol, li {
+	list-style: none;
+}
+a:visited {
+	color: inherit;
+}
+a:hover {
+	text-decoration: none;
+}
+a, a:hover, input[type="submit"], button {
+	outline: 0;text-decoration: none !important;
+}
+button, html [type="button"], [type="reset"], [type="submit"] {
+	-webkit-appearance:none;
+	border-radius:0
+}
+
+ h1 {font-size: 3.5rem !important;}
+ h2 {font-size: 3rem !important;}
+ h3 {font-size: 2.5rem !important;}
+ h4 {font-size: 2rem !important;}
+ h5 {font-size: 1.5rem !important;}
+ h6 {font-size: 1.25rem !important;}
+
+ p {font-size: 1.2rem !important;}
+
+.bc-primary {background-color: #3c2f8b !important;}
+.bc-secondary {background-color: #fcd884;}
+.bc-custom {background-color: #a94196;}
+.bc-light {background-color: #edebeb;}
+.bc-white {background-color: #ffffff;}
+.bc-dark {background-color: #000000;}
+.bc-gray {background-color: #454545;}
+
+
+.btc-secondary {background-color: #3c2f8b;color:#ffffff !important;}
+.btc-secondary:hover {background-color: #a94196;color: #ffffff !important;}
+.btc-white {background-color: #ffffff;color:#3c2f8b !important;}
+.btc-white:hover {color: #a94196 !important;}
+.btc-custom {background-color: #a94196;color: #ffffff !important;}
+.btc-custom:hover {background-color: #3c2f8b;color:#ffffff !important;}
+ 
+.btn-text {color:#000000}
+.btn-text:hover {color:#a94196;}
+
+.text-primary {color:#3c2f8b;}
+.text-secondary {color:#fcd884;}
+.text-custom {color:#a94196}
+.light{color:#c9c9c9;}
+.dark {color:#000000};
+.gray {color:#454545;}

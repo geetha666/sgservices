@@ -1,0 +1,54 @@
+.page-section {
+    background-image: url('/../assets/images/hero.jpg');
+    background-size: cover;
+    min-height: 700px;
+
+   }
+.intro-text {background-color: rgba(255, 255, 255, 0.3);    border: 5px solid #ffffff;}
+
+.serv-icon {width: 80px;border: 5px solid #3c2f8b;border-radius: 10px;margin-bottom: 20px;background-color: #ffffff;}
+
+.serv-icon img {display: inline-block;width: 100%;padding: 10px;}
+
+.serv-box {margin-bottom: 60px;box-shadow: 5px 5px 20px 0 rgba(0,0,0,0.2);background-color: #ffffff;}
+
+.serv-box h5 a{color:#3c2f8b;}
+.serv-i a {position: relative;display: inline-block;padding-top: 100px;}
+
+.serv-i a:before {width:90px;height: 90px;position: absolute;content: "";left:0;top:-40px;border:5px solid #3c2f8b;padding:45px;background-repeat: no-repeat;background-position: center;background-color: #ffffff;border-radius: 10px;}
+.serv-i.s-icon1 a:before{background-image: url('/../assets/images/ic1.png');}
+.serv-i.s-icon2 a:before {background-image: url('/../assets/images/ic2.png');}
+.serv-i.s-icon3 a:before {background-image: url('/../assets/images/ic3.png');}
+.serv-i.s-icon4 a:before {background-image: url('/../assets/images/ic4.png');}
+.serv-i.s-icon5 a:before {background-image: url('/../assets/images/ic6.png');}
+.serv-i.s-icon6 a:before {background-image: url('/../assets/images/ic5.png');}
+
+.serv-box:hover .serv-i a:before {border:5px solid #a94196;}
+.serv-box:hover .serv-i.s-icon1 a:before{background-image: url('/../assets/images/ich1.png');}
+.serv-box:hover .serv-i.s-icon2 a:before {background-image: url('/../assets/images/ich2.png');}
+.serv-box:hover .serv-i.s-icon3 a:before {background-image: url('/../assets/images/ich3.png');}
+.serv-box:hover .serv-i.s-icon4 a:before {background-image: url('/../assets/images/ich4.png');}
+.serv-box:hover .serv-i.s-icon5 a:before {background-image: url('/../assets/images/ich6.png');}
+.serv-box:hover .serv-i.s-icon6 a:before {background-image: url('/../assets/images/ich5.png');}
+
+
+
+.serv-box:hover h5 a{color:#a94196}
+
+
+.page-section2 {padding: 6% 0 8%;}
+
+.page-section2 h2 {margin-bottom: 120px;}
+
+.serv-btn a {border-bottom: 2px solid #a94196;}
+
+.about-img img {display: block;width: 100%;position: relative;margin-top:-50px}
+
+.page-section3 {position: relative;padding:0 0 5%;background-color: #ffffff;}
+
+.page-section3:before {position:absolute;content: "";background-color: #3c2f8b;width: 40%;height: 90%;left:-50px;top:-100px;}
+
+
+.abt-cnt {margin-left:-50px;position: relative;}
+.abt-cnt:before {position:absolute;content: "";background-color: #3c2f8b;width: 40%;height: 130%;left:-50px;top:0;bottom: 0;margin:auto;}
+.abt-box {position: relative;z-index: 9;}
