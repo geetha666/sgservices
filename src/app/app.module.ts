@@ -7,6 +7,11 @@ import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { SitemapComponent } from './sitemap/sitemap.component';
+import { FooterComponent } from './footer/footer.component';
+import { AboutusComponent } from './aboutus/aboutus.component';
+import { ContactusComponent } from './contactus/contactus.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -14,11 +19,19 @@ import { SitemapComponent } from './sitemap/sitemap.component';
     HeaderComponent,
     HomeComponent,
     SitemapComponent,
+    FooterComponent,
+    AboutusComponent,
+    ContactusComponent,
   ],
   imports: [
+    
     BrowserModule,
     AppRoutingModule,
-    SlickCarouselModule
+    SlickCarouselModule,
+    FormsModule,
+    ReactiveFormsModule,
+    BrowserAnimationsModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

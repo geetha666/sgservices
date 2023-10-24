@@ -1,0 +1,51 @@
+<footer class="footer py-5 bc-gray">
+ 
+    <div class="container" >
+      <div class="row row-grid align-items-center" >
+        <div class="col-lg-6">
+          <h3 class="text-white font-weight-light mb-2">Thank you for supporting us!</h3>
+          <h6 class="mb-0 font-weight-light text-white">Let's get in touch on any of these platforms.</h6>
+          <div class="social-icons"></div>
+        </div>
+        <div class="col-lg-6 text-md-center  text-sm-center text-lg-right btn-wrapper mt-3">
+      
+          <a  target="_blank" [href]="sathizie('https://www.facebook.com/profile.php?id=61552682520367')" class="btn btn-neutral btn-icon-only btn-facebook btn-round btn-lg">
+            <i class="fa fa-facebook"></i>
+          </a>
+          <a target="_blank" href="https://www.instagram.com/softgenicservices/" class="btn btn-neutral btn-icon-only btn-dribbble btn-lg btn-round">
+            <i class="fa fa-instagram"></i>
+          </a>
+          <a target="_blank" href="#" class="btn btn-neutral btn-icon-only btn-github btn-round btn-lg">
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+      <hr>
+      <div class="row align-items-center justify-content-md-between text-white">
+        <div class="col-12 col-md-12 col-lg-6 mb-md-1 mb-sm-1">
+          <div class="copyright">
+            &copy; {{test | date:"yyyy"}}
+            <a href="#" target="_blank">SoftGenic </a>.
+          </div>
+        </div>
+        <div class="col-12 col-md-12 col-lg-6">
+          <ul class="nav nav-footer justify-content-lg-end justify-content-md-center justify-content-center">
+            <li class="nav-item">
+                <a [routerLink]="['/home']" class="nav-link">Home</a>
+              </li>
+            <li class="nav-item">
+              <a [routerLink]="['/about']" class="nav-link">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a [routerLink]="['/services']" class="nav-link">Services</a>
+            </li>
+           
+            <li class="nav-item">
+              <a [routerLink]="['/home']" class="nav-link">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  

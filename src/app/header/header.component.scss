@@ -33,3 +33,17 @@
     border-radius: 0.2rem;
 }
 .navbar-nav .dropdown-menu ul li {list-style: circle;}
+
+.hd-rt i {margin-right: 5px;}
+.top-btn i {color:green;font-size: 1.5rem;}
+.top-mail i {color:#3c2f8b;font-size: 1rem;}
+
+.top-btn button {background-color: transparent;}
+
+.hd-rt button, .hd-rt a {color:#3c2f8b}
+
+.hd-rt button:hover, .hd-rt a:hover {color:#a94196}
+
+@media (max-width: 991px) {
+  .dropdown-menu {display: none !important;}
+}

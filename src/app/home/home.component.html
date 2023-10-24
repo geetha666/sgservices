@@ -1,59 +1,59 @@
 <section class="page-section d-flex align-items-center clearfix">
     <div class="container">
-        <div class="intro">
+        <div class="intro ripple pinkBg">
             <!-- <img class="intro-img" src="assets/images/hero.jpg" alt="hero" /> -->
-            <div class="col-lg-6 col-12 intro-text left-0 bg-faded p-5 rounded align-middle">
+            <div class="col-lg-6 col-12 intro-text left-0 bg-faded p-5 rounded align-middle ">
                 <h1 class="mb-3 text-white">
                   Soft Genic Services
                 </h1>
-                <p class="mb-4 text-white">Transforming Ideas into Web Realities.</p>
+                <p class="mb-4 text-dark fw-bold">Transforming Ideas into Web Realities.</p>
                 <div class="intro-button mx-auto"><a class="btc-secondary rounded-pill px-4 py-3 fw-bold d-inline-block" href="#">Contact Us Today!</a></div>
             </div>
         </div>
     </div>
 </section>
 
+
+
 <section class="page-section2 d-flex align-items-center clearfix bc-light">
 <div class="container">
 <h2 class="section-heading text-center">Our Services</h2>
-<ngx-slick-carousel class="similar-items-slider" [config]="sliderConfig">
 <div class="grid slider-item">
-    <div class="serv-box g-col-12 g-col-6 g-col-md-4 p-5 pt-0">
+    <div class="serv-box g-col-12 g-col-md-4 p-5 pt-0">
       <div class="serv-i s-icon1"><a href="#"></a></div>
       <h5 class="mb-3"><a href="#">PSD to HTML Conversion</a></h5>
       <p class="description mb-2">Transform your creative designs into functional web pages with our PSD to HTML conversion service.</p>
          </div>
 
-    <div class="serv-box g-col-12 g-col-6 g-col-md-4 p-5 pt-0">
+    <div class="serv-box g-col-12 g-col-md-4 p-5 pt-0">
         <div class="serv-i s-icon2"><a href="#"></a></div>
       <h5 class="mb-3"><a href="#">WordPress Development</a></h5>
       <p class="description mb-2">Harness the power of WordPress for your web presence.</p>
          </div>
 
-    <div class="serv-box g-col-12 g-col-6 g-col-md-4 p-5 pt-0">
+    <div class="serv-box g-col-12 g-col-md-4 p-5 pt-0">
         <div class="serv-i s-icon3"><a href="#"></a></div>
       <h5 class="mb-3"><a href="#">Angular Web Development</a></h5>
       <p class="description mb-2">Leverage the power of Angular to build dynamic and interactive web applications.</p>
          </div>
     
-    <div class="serv-box g-col-12 g-col-6 g-col-md-4 p-5 pt-0">
+    <div class="serv-box g-col-12 g-col-md-4 p-5 pt-0">
         <div class="serv-i s-icon4"><a href="#"></a></div>
       <h5 class="mb-3"><a href="#">Single Page Application</a></h5>
       <p class="description mb-2">Experience the benefits of a Single Page Application (SPA) for your web presence.</p>
          </div>
-    <div class="serv-box g-col-12 g-col-6 g-col-md-4 p-5 pt-0">
+    <div class="serv-box g-col-12 g-col-md-4 p-5 pt-0">
         <div class="serv-i s-icon5"><a href="#"></a></div>
         <h5 class="mb-3"><a href="#">Ionic</a></h5>
         <p class="description mb-2">Experience in Ionic  to perform fast on the all of the latest mobile devices.</p>
                  </div>
-          <div class="serv-box g-col-12 g-col-6 g-col-md-4 p-5 pt-0">
+          <div class="serv-box g-col-12 g-col-md-4 p-5 pt-0">
             <div class="serv-i s-icon6"><a href="#"></a></div>
             <h5 class="mb-3"><a href="#">Android and IOS</a></h5>
             <p class="description mb-2">Experience in to build high-quality iOS, Android  Apps.</p>
                          </div>
   </div>
 
-</ngx-slick-carousel>
 </div>
 
 </section>
@@ -61,16 +61,69 @@
 <section class="page-section3 d-flex align-items-center clearfix">
   <div class="container">
 
-    <div class="d-flex align-items-baseline">
-      <div class="col-lg-6 col-12"><div class="about-img"><img src="../assets/images/about-img.jpg" alt="about-img"></div></div>
-      <div class="col-lg-6 col-12 abt-cnt">
+    <div class="row d-flex align-items-baseline  flex-row-reverse">
+     
+      <div class="col-lg-6 col-md-6 col-12 abt-cnt">
         <div class="abt-box text-white bc-gray p-5">
         <h2>About us</h2>
         <p class="mb-4">At Soft Genic, we are passionate about the digital world and dedicated to crafting exceptional web experiences. We are a team of skilled and creative web developers who thrive on turning your ideas into functional, visually stunning, and user-friendly websites.</p>
-        <div class="intro-button mx-auto"><a class="btc-white rounded-pill px-4 py-3 fw-bold d-inline-block" href="#">Learn More</a></div>
+        <div class="intro-button mx-auto"><a class="btc-white rounded-pill px-4 py-3 fw-bold d-inline-block" [routerLink]="['/about']">Know More</a></div>
       </div>
       </div>
+      <div class="col-lg-6 col-md-6 col-12"><div class="about-img"><img src="../assets/images/about-img.jpg" alt="about-img"></div></div>
     </div>
   </div>
+  
 </section>
+
+<section class="page-section4 d-flex align-items-center clearfix bc-light">
+  <div class="container">
+    <h2 class="section-heading text-center mb-5 text-white">Why Choose Us?</h2>
+    <div class="grid text-center">
+    <div class="choos-box g-col-12 g-col-md-6 g-col-lg-3 p-4">
+      <h5 class="mb-3">Expertise</h5>
+      <p class="description mb-2">We are experienced web developers having well-versed in the latest technologies and trends in web development. We bring a wealth of knowledge to every project, ensuring that your website is built to industry best practices.</p>
+         </div>
+         <div class="choos-box g-col-12 g-col-md-6 g-col-lg-3 p-4">
+          <h5 class="mb-3">Custom Solutions</h5>
+          <p class="description mb-2">We understand that every project is unique. That's why we take a personalized approach to web development, tailoring our solutions to meet your specific needs and goals</p>
+             </div>
+            <div class="choos-box g-col-12 g-col-md-6 g-col-lg-3 p-4">
+            <h5 class="mb-3">User-Centric Approach</h5>
+            <p class="description mb-2">We prioritize the user experience in everything we do. Our websites are designed with your target audience in mind, making sure they are easy to navigate, responsive on all devices, and optimized for performance.</p>
+            </div>
+            <div class="choos-box g-col-12 g-col-md-6 g-col-lg-3 p-4">
+            <h5 class="mb-3">Timely Delivery</h5>
+            <p class="description mb-2">We understand the importance of deadlines. When you work with us, you can count on us to deliver your project on time and within budge</p>
+              </div>
+            
+</div>
+
+    </div>
+    </section>
+
+
+<section class="page-section5 clearfix">
+  <div class="container">
+
+    
+    <div class="row d-flex align-items-center">
+     
+    <div class="col-lg-6 col-md-6 col-12 mission-box p-5 bc-gray text-white">
+      <h2>Our Mission</h2>
+     <p>Our mission is simple: to empower businesses and individuals with the digital tools they need to succeed in the online landscape. We believe that a well-designed website is more than just a digital presence; it's a powerful asset that can help you connect with your audience, showcase your brand, and achieve your goals.</p>
+    </div>
+    <div class="col-lg-6 col-md-6 col-12">
+      <div class="miss-img">
+        <img src="../assets/images/mission-img.jpg" alt="our-mission-image">
+      </div>
+     </div>
+    
+    </div>
+
+
+    </div>
+    </section>
+
+
 

@@ -16,6 +16,7 @@
 body {
 	margin:0;
 	padding:0;
+	counter-reset: my-sec-counter;
 }
 .clear {
 	clear: both;
@@ -66,10 +67,10 @@ button, html [type="button"], [type="reset"], [type="submit"] {
  h2 {font-size: 3rem !important;}
  h3 {font-size: 2.5rem !important;}
  h4 {font-size: 2rem !important;}
- h5 {font-size: 1.5rem !important;}
- h6 {font-size: 1.25rem !important;}
+ h5 {font-size: 1.3rem !important;}
+ h6 {font-size: 1.2rem !important;}
 
- p {font-size: 1.2rem !important;}
+ p {font-size: 1rem !important;}
 
 .bc-primary {background-color: #3c2f8b !important;}
 .bc-secondary {background-color: #fcd884;}
@@ -90,9 +91,12 @@ button, html [type="button"], [type="reset"], [type="submit"] {
 .btn-text {color:#000000}
 .btn-text:hover {color:#a94196;}
 
-.text-primary {color:#3c2f8b;}
-.text-secondary {color:#fcd884;}
+.textc-primary {color:#3c2f8b;}
+.textc-secondary {color:#fcd884;}
 .text-custom {color:#a94196}
 .light{color:#c9c9c9;}
 .dark {color:#000000};
 .gray {color:#454545;}
+
+
+.nav-link:active, .nav-link:focus, .nav-link:hover {color:#a94196 !important;}

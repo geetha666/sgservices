@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="row row-grid justify-content-center align-items-center">
+      <div class="col-lg-6">
+        <h2 class="text-white font-weight-bold mb-3 text-center text-uppercase">Contact Us</h2>
+      
+        
+          <div class="card bg-primary shadow border-0">
+            
+            <div class="card-body px-lg-5 py-lg-5">
+              
+              <form  [formGroup]="geethaform" (ngSubmit)="formsec()">
+               
+                <div class="form-input">
+                  <label for="name">Name  </label>
+                  <input  type="text" formControlName="name">
+                </div>
+                <div class="form-input">
+                  <label for="email">Email </label>
+                  <input  type="email" formControlName="email">
+                </div>
+                <div class="form-input">
+                  <label for="phone">Phone Number </label>
+                  <input  type="number" formControlName="phone">
+                </div>
+                <div class="form-input">
+                  <label for="msg">Message </label>
+                  <textarea  formControlName="msg"></textarea>
+                </div>
+                
+                <div class="text-center">
+                  <button [disabled]="!geethaform.valid" type="submit" class="btn btn-primary my-4">Submit</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        
+      </div>
+    </div>
+  </div>
