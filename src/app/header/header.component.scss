@@ -44,6 +44,29 @@
 
 .hd-rt button:hover, .hd-rt a:hover {color:#a94196}
 
-@media (max-width: 991px) {
+@media (max-width: 992px) {
   .dropdown-menu {display: none !important;}
+  .navbar button.navbar-toggler span {
+    
+    outline: 0;
+}
+.navbar  .dropdown-toggle::after {display: none !important;}
+.hd-rt {margin:20px 0 10px;}
+.navbar button.navbar-toggler {
+  background: #8e8c9a !important;
+}
+ul.navbar-nav {
+  background: #8e8c9a !important;
+}
+
+}
+
+@media (max-width:420px) {
+  .top-mail, .top-btn {
+    width: 100%;
+    margin:10px 0;
+ 
+}
+.hd-rt {display: block !important;text-align: center !important;}
+
 }

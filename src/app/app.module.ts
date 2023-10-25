@@ -12,6 +12,12 @@ import { AboutusComponent } from './aboutus/aboutus.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { TechComponent } from './tech/tech.component';
+import { WordpressComponent } from './wordpress/wordpress.component';
+import { AngularwebComponent } from './angularweb/angularweb.component';
+import { SinglepageComponent } from './singlepage/singlepage.component';
+import { IonicComponent } from './ionic/ionic.component';
+import { IosAdComponent } from './ios-ad/ios-ad.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +28,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     FooterComponent,
     AboutusComponent,
     ContactusComponent,
+    TechComponent,
+    WordpressComponent,
+    AngularwebComponent,
+    SinglepageComponent,
+    IonicComponent,
+    IosAdComponent,
   ],
   imports: [
     
@@ -33,7 +45,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserAnimationsModule
     
   ],
-  providers: [],
+  providers: [   // { provide: LocationStrategy, useClass: HashLocationStrategy }
+],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

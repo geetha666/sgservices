@@ -11,7 +11,7 @@ export class AppComponent implements OnInit {
 
   }
   ngOnInit() {
-    this.router.navigateByUrl('home', { skipLocationChange: true });
+    //this.router.navigateByUrl('home', { skipLocationChange: true });
   }
-  title = 'yes';
+  title = 'SoftGenics';
 }

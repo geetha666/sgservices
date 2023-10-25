@@ -1,1 +1,14 @@
 .nav-footer li a {color:#ffffff;}
+
+.social-icons a {padding-left:0;}
+
+.social-icons a i {background-color: #3c2f8b;color:#ffffff;width: 40px;height: 40px;vertical-align: middle;padding: 10px 5px;
+    border-radius: 5px;}
+
+    .social-icons a:hover i {background-color: #a94196;}
+
+    @media (max-width:420px) {
+        .nav-footer a.nav-link {
+            padding: 0 10px;
+        }
+    }

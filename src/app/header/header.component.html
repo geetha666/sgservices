@@ -2,7 +2,7 @@
     <div class="container">
   
     <div class="col-2">
-    <a class="navbar-brand" [routerLink]="['/home']">
+    <a class="navbar-brand" [routerLink]="['']">
       <img src="assets/images/sg-logo.png" alt="sgs-logo">
     </a>
     </div>
@@ -12,43 +12,43 @@
     <div class="col-6 collapse navbar-collapse justify-content-around" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/home']" skipLocationChange>Home</a>
+          <a class="nav-link" [routerLink]="['']" >Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/about']" skipLocationChange>About Us</a>
+          <a class="nav-link" [routerLink]="['/about']" >About Us</a>
         </li>
         <li class="nav-item dropdown"> <!-- Add 'dropdown' class to the 'Services' menu item -->
-            <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" [routerLink]="['/services']"  id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Services
             </a>
             <div class="dropdown-menu" aria-labelledby="servicesDropdown">
                 <div class="d-flex flex-wrap justify-content-between align-items-start">
                 <div class="media-body ml-3">
                 <h6 class="text-uppercase">Website Development</h6>
-                <div class="dropdown-menu-inner"><ul class="list-group">
-                  <li><a href="#">PSD to HTML conversion</a></li>
-                  <li><a href="#">WordPress Development</a></li>
-                  <li><a href="#">Angular Web Development</a></li>
-                  <li><a href="#">Single Page Application</a></li>
+                <div class="dropdown-menu-inner"><ul class="list-group" [routerLink]="['/tech']" >
+                  <li><a >PSD to HTML conversion</a></li>
+                  <li><a >WordPress Development</a></li>
+                  <li><a >Angular Web Development</a></li>
+                  <li><a >Single Page Application</a></li>
                 </ul></div>
                 </div>
                 <div class="media-body ml-3">
                     <h6 class="text-uppercase">App Development</h6>
                   <div class="dropdown-menu-inner"><ul class="list-group">
-                    <li><a href="#">Ionic</a></li>
-                    <li><a href="#">Android and IOS</a></li>
+                    <li><a >Ionic</a></li>
+                    <li><a >Android and IOS</a></li>
                     </ul></div>
                 </div>
                 </div>
             </div>
           </li>
         <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/contact']" skipLocationChange >Contact</a>
+          <a class="nav-link" [routerLink]="['/contact']"  >Contact</a>
         </li>
       </ul>
     </div>
     <div class="col-12 col-sm-12 col-lg-4 hd-rt justify-content-end text-end d-flex justify-content-around">
-      <div class="top-mail" style="margin-top: 4px;">
+      <div class="top-mail">
         <i class="fa fa-envelope" aria-hidden="true"></i>
 <a href="mailto:info@Softgenics.online">info@Softgenics.online</a>            
        </div>
