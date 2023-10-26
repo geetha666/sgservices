@@ -18,7 +18,6 @@ import { AngularwebComponent } from './angularweb/angularweb.component';
 import { SinglepageComponent } from './singlepage/singlepage.component';
 import { IonicComponent } from './ionic/ionic.component';
 import { IosAdComponent } from './ios-ad/ios-ad.component';
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,8 +41,7 @@ import { IosAdComponent } from './ios-ad/ios-ad.component';
     SlickCarouselModule,
     FormsModule,
     ReactiveFormsModule,
-    BrowserAnimationsModule
-    
+    BrowserAnimationsModule    
   ],
   providers: [   // { provide: LocationStrategy, useClass: HashLocationStrategy }
 ],

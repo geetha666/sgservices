@@ -16,7 +16,7 @@ export class FooterComponent implements OnInit   {
 
   }
   sathizie(url:any){
-    return this.sanitizer.bypassSecurityTrustResourceUrl('https://www.facebook.com/profile.php?id=61552682520367');
+    return this.sanitizer.bypassSecurityTrustResourceUrl(url);
 
   }
 

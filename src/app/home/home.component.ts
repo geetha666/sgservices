@@ -7,5 +7,5 @@ import { Carousel } from "bootstrap";
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
-
+ 
 }

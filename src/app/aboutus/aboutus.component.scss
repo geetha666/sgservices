@@ -1,3 +1,12 @@
-.rounded{
-    margin-bottom: 10px;
+.in-img {position: relative;padding: 20px 0 0 20px}
+
+.in-img::before {position: absolute;
+    content: "";
+    background-color: #3c2f8b;
+    width: 40%;
+    height: 90%;
+    left: -20px;
+    top: -20px;
+    
 }
+.in-img img {position: relative;}

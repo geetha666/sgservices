@@ -7,18 +7,17 @@
                   Soft Genic Services
                 </h1>
                 <p class="mb-4 text-dark fw-bold">Transforming Ideas into Web Realities.</p>
-                <div class="intro-button mx-auto"><a class="btc-secondary rounded-pill px-4 py-3 fw-bold d-inline-block" >Contact Us Today!</a></div>
+                <div class="intro-button mx-auto"><a class="btc-secondary rounded-pill px-4 py-3 fw-bold d-inline-block" [routerLink]="['/contact']">Contact Us Today!</a></div>
             </div>
         </div>
     </div>
 </section>
 
 
-
 <section class="page-section2 d-flex align-items-center clearfix bc-light">
 <div class="container">
 <h2 class="section-heading text-center">Our Services</h2>
-<div class="grid slider-item px-3">
+<div class="grid px-3">
     <div class="serv-box g-col-12 g-col-md-4 p-lg-5 p-sm-4 p-4 pt-0 pt-sm-0 pt-lg-0">
       <div class="serv-i s-icon1"><a ></a></div>
       <h5 class="mb-3"><a >PSD to HTML Conversion</a></h5>
@@ -58,6 +57,11 @@
 
 </section>
 
+
+
+
+
+
 <section class="page-section3 d-flex align-items-center clearfix">
   <div class="container">
 
@@ -67,7 +71,8 @@
         <div class="abt-box text-white bc-gray p-5">
         <h2>About us</h2>
         <p class="mb-4">At Soft Genic, we are passionate about the digital world and dedicated to crafting exceptional web experiences. We are a team of skilled and creative web developers who thrive on turning your ideas into functional, visually stunning, and user-friendly websites.</p>
-        <div class="intro-button mx-auto"><a class="btc-white rounded-pill px-4 py-3 fw-bold d-inline-block" [routerLink]="['/about']">Know More</a></div>
+        <div class="intro-button mx-auto"><a class="btc-white rounded-pill px-4 py-3 fw-bold d-inline-block" 
+          [routerLink]="['/about']">Know More</a></div>
       </div>
       </div>
       <div class="col-lg-6 col-md-6 col-12"><div class="about-img"><img src="../assets/images/about-img.jpg" alt="about-img"></div></div>

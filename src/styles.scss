@@ -130,6 +130,10 @@ button, html [type="button"], [type="reset"], [type="submit"] {
 .serv-box:hover h5 a{color:#a94196 !important;}
 
 .serv-box:hover {
+	-webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
     transform: scale(1.1);
     transition: 1s;
 }
