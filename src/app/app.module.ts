@@ -13,11 +13,15 @@ import { ContactusComponent } from './contactus/contactus.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TechComponent } from './tech/tech.component';
-import { WordpressComponent } from './wordpress/wordpress.component';
-import { AngularwebComponent } from './angularweb/angularweb.component';
-import { SinglepageComponent } from './singlepage/singlepage.component';
-import { IonicComponent } from './ionic/ionic.component';
-import { IosAdComponent } from './ios-ad/ios-ad.component';
+import { WordpressComponent } from './inner-pages/wordpress/wordpress.component';
+import { AngularwebComponent } from './inner-pages/angularweb/angularweb.component';
+import { IonicComponent } from './inner-pages/ionic/ionic.component';
+import { IosAdComponent } from './inner-pages/ios-ad/ios-ad.component';
+import { PsdHtmlComponent } from './inner-pages/psd-html/psd-html.component';
+import { SinglepageComponent } from './inner-pages/singlepage/singlepage.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,6 +37,7 @@ import { IosAdComponent } from './ios-ad/ios-ad.component';
     SinglepageComponent,
     IonicComponent,
     IosAdComponent,
+    PsdHtmlComponent,
   ],
   imports: [
     
@@ -41,7 +46,8 @@ import { IosAdComponent } from './ios-ad/ios-ad.component';
     SlickCarouselModule,
     FormsModule,
     ReactiveFormsModule,
-    BrowserAnimationsModule    
+    BrowserAnimationsModule,
+    NgbModule 
   ],
   providers: [   // { provide: LocationStrategy, useClass: HashLocationStrategy }
 ],

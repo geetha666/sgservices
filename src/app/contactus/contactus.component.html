@@ -3,34 +3,33 @@
 <div class="container">
     <div class="row row-grid justify-content-center align-items-center">
       <div class="col-lg-6">
-        <h2 class="text-black font-weight-bold mb-3 text-center text-uppercase">Contact Us</h2>
+        <h2 class="mb-3 text-center text-uppercase mb-4">Contact Us</h2>
       
         
-          <div class="card bc-gray shadow border-0">
+          <div class="bc-primary shadow border-0">
             
-            <div class="card-body px-lg-5 py-lg-5">
+            <div class="px-lg-5 py-lg-5">
               
               <form  [formGroup]="geethaform" (ngSubmit)="formsec()">
                
                 <div class="form-input">
                   <label for="name">Name  </label>
-                  <input  type="text" formControlName="name">
+                  <input  type="text" formControlName="name" class="rounded-2 mb-2">
                 </div>
                 <div class="form-input">
                   <label for="email">Email </label>
-                  <input  type="email" formControlName="email">
+                  <input  type="email" formControlName="email" class="rounded-2 mb-2">
                 </div>
                 <div class="form-input">
                   <label for="phone">Phone Number </label>
-                  <input  type="number" formControlName="phone">
+                  <input  type="number" formControlName="phone" class="rounded-2 mb-2">
                 </div>
                 <div class="form-input">
                   <label for="msg">Message </label>
-                  <textarea  formControlName="msg"></textarea>
+                  <textarea  formControlName="msg" class="rounded-2 mb-2"></textarea>
                 </div>
-                
                 <div class="text-center">
-                  <button [disabled]="!geethaform.valid" type="submit" class="btn btn-primary my-4">Submit</button>
+                  <button [disabled]="!geethaform.valid" type="submit" class="btn my-3 rounded-pill fw-bold px-5">Submit</button>
                 </div>
               </form>
             </div>

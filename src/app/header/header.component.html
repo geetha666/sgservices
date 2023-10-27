@@ -30,7 +30,7 @@
                 </a>
               </li>
             <li class="nav-item">
-              <a class="nav-link" [routerLink]="['/contact']"  >Contact</a>
+              <a class="nav-link" [routerLink]="['/contact']">Contact Us</a>
             </li>
           </ul>
         </div>
@@ -53,24 +53,24 @@
                 <div class="media-body ml-3">
                 <h6 class="text-uppercase">Website Development</h6>
                 <div class="dropdown-menu-inner"><ul class="list-group" [routerLink]="['/tech']" >
-                  <li><a >PSD to HTML conversion</a></li>
-                  <li><a >WordPress Development</a></li>
-                  <li><a >Angular Web Development</a></li>
-                  <li><a >Single Page Application</a></li>
+                  <li><a [routerLink]="['/psd-html']">PSD to HTML conversion</a></li>
+                  <li><a [routerLink]="['/wordpress']">WordPress Development</a></li>
+                  <li><a [routerLink]="['/angular']">Angular Web Development</a></li>
+                  <li><a [routerLink]="['/singlepage']">Single Page Application</a></li>
                 </ul></div>
                 </div>
                 <div class="media-body ml-3">
                     <h6 class="text-uppercase">App Development</h6>
                   <div class="dropdown-menu-inner"><ul class="list-group">
-                    <li><a >Ionic</a></li>
-                    <li><a >Android and IOS</a></li>
+                    <li><a [routerLink]="['/ionic']">Ionic</a></li>
+                    <li><a [routerLink]="['/ios-ad']">Android and IOS</a></li>
                     </ul></div>
                 </div>
                 </div>
             </div>
           </li>
         <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/contact']"  >Contact</a>
+          <a class="nav-link" [routerLink]="['/contact']">Contact Us</a>
         </li>
       </ul>
     </div>

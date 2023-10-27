@@ -60,7 +60,8 @@ a, a:hover, input[type="submit"], button {
 }
 button, html [type="button"], [type="reset"], [type="submit"] {
 	-webkit-appearance:none;
-	border-radius:0
+	border-radius:0;
+	font-family: 'Poppins', sans-serif !important;
 }
 
  h1 {font-size: 3rem !important;}
