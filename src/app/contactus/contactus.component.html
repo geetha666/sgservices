@@ -8,25 +8,47 @@
         
           <div class="bc-primary shadow border-0">
             
-            <div class="px-lg-5 py-lg-5">
+            <div class="px-lg-5 py-lg-5 px-4 py-4">
               
               <form  [formGroup]="geethaform" (ngSubmit)="formsec()">
                
                 <div class="form-input">
                   <label for="name">Name  </label>
                   <input  type="text" formControlName="name" class="rounded-2 mb-2">
+                  <span class="text-danger"
+                                *ngIf="(geethaform.get('name').touched) && geethaform.get('name').errors?.required">
+                                Name is required
+                            </span>
                 </div>
                 <div class="form-input">
                   <label for="email">Email </label>
                   <input  type="email" formControlName="email" class="rounded-2 mb-2">
+                  <span class="text-danger"
+                  *ngIf="(geethaform.get('email').touched) && geethaform.get('email').errors?.required">
+                  
+                  Email is required
+              </span>
+              <span class="text-danger"
+                  *ngIf="(geethaform.get('email').errors?.pattern)">
+                  Email address is invalid
+              </span>
+              
                 </div>
                 <div class="form-input">
                   <label for="phone">Phone Number </label>
                   <input  type="number" formControlName="phone" class="rounded-2 mb-2">
+                  <span class="text-danger"
+                  *ngIf="(geethaform.get('phone').touched) && geethaform.get('phone').errors?.required">
+                  Phone Number is required
+              </span>
                 </div>
                 <div class="form-input">
                   <label for="msg">Message </label>
                   <textarea  formControlName="msg" class="rounded-2 mb-2"></textarea>
+                  <span class="text-danger"
+                  *ngIf="(geethaform.get('msg').touched) && geethaform.get('msg').errors?.required">
+                  Message is required
+              </span>
                 </div>
                 <div class="text-center">
                   <button [disabled]="!geethaform.valid" type="submit" class="btn my-3 rounded-pill fw-bold px-5">Submit</button>

@@ -23,7 +23,7 @@ const routes: Routes = [
   {path:'wordpress',component:WordpressComponent},
   {path:'singlepage',component:SinglepageComponent},
   {path:'ionic',component:IonicComponent},
-  {path:'ios-adroid',component:IosAdComponent},
+  {path:'ios-android',component:IosAdComponent},
   {path:'*', redirectTo:'home', pathMatch:'full'},
   {path: '',  component: HomeComponent} 
 

@@ -17,40 +17,45 @@
 <section class="page-section2 d-flex align-items-center clearfix bc-light">
 <div class="container">
 <h2 class="section-heading text-center">Our Services</h2>
-<div class="grid px-3">
-    <div class="serv-box g-col-12 g-col-md-4 p-lg-5 p-sm-4 p-4 pt-0 pt-sm-0 pt-lg-0">
-      <div class="serv-i s-icon1"><a [routerLink]="['/psd-html']">icon1</a></div>
-      <h5 class="mb-3"><a [routerLink]="['/psd-html']">PSD to HTML Conversion</a></h5>
-      <p>Transform your creative designs into functional web pages with our PSD to HTML conversion service.</p>
+<div  class="grid services-slide owl-carousel">
+ 
+
+    <div class="serv-box p-lg-5 p-sm-4 p-4 pt-0 pt-sm-0 pt-lg-0" [routerLink]="['/psd-html']">
+      <div class="serv-i s-icon1"><a>icon1</a></div>
+      <h5 class="mb-3">PSD to HTML Conversion</h5>
+      <p>{{psd | WordcountPipe :10}}</p>
          </div>
 
-    <div class="serv-box g-col-12 g-col-md-4 p-lg-5 p-sm-4 p-4 pt-0 pt-sm-0 pt-lg-0">
-        <div class="serv-i s-icon2"><a [routerLink]="['/wordpress']">icon2</a></div>
-      <h5 class="mb-3"><a [routerLink]="['/wordpress']">WordPress Development</a></h5>
-      <p>Harness the power of WordPress for your web presence.</p>
+    <div class="serv-box p-lg-5 p-sm-4 p-4 pt-0 pt-sm-0 pt-lg-0" [routerLink]="['/wordpress']">
+        <div class="serv-i s-icon2"><a >icon2</a></div>
+      <h5 class="mb-3">WordPress Development</h5>
+      <p>{{wordpress | WordcountPipe :10}} </p>
          </div>
 
-    <div class="serv-box g-col-12 g-col-md-4 p-lg-5 p-sm-4 p-4 pt-0 pt-sm-0 pt-lg-0">
-        <div class="serv-i s-icon3"><a [routerLink]="['/angular']">icon3</a></div>
-      <h5 class="mb-3"><a [routerLink]="['/angular']">Angular Web Development</a></h5>
-      <p>Leverage the power of Angular to build dynamic and interactive web applications.</p>
+    <div class="serv-box p-lg-5 p-sm-4 p-4 pt-0 pt-sm-0 pt-lg-0" [routerLink]="['/angular']">
+        <div class="serv-i s-icon3"><a>icon3</a></div>
+      <h5 class="mb-3">Angular Web Development</h5>
+      <p> {{angular | WordcountPipe :10}}</p>
          </div>
+
+        
     
-    <div class="serv-box g-col-12 g-col-md-4 p-lg-5 p-sm-4 p-4 pt-0 pt-sm-0 pt-lg-0">
-        <div class="serv-i s-icon4"><a [routerLink]="['/singlepage']">icon4</a></div>
-      <h5 class="mb-3"><a [routerLink]="['/singlepage']">Single Page Application</a></h5>
-      <p>Experience the benefits of a Single Page Application (SPA) for your web presence.</p>
+    <div class="serv-box p-lg-5 p-sm-4 p-4 pt-0 pt-sm-0 pt-lg-0" [routerLink]="['/singlepage']">
+        <div class="serv-i s-icon4"><a>icon4</a></div>
+      <h5 class="mb-3">Single Page Application</h5>
+      <p> {{ single| WordcountPipe :10}}</p>
          </div>
-    <div class="serv-box g-col-12 g-col-md-4 p-lg-5 p-sm-4 p-4 pt-0 pt-sm-0 pt-lg-0">
-        <div class="serv-i s-icon5"><a [routerLink]="['/ionic']">icon5</a></div>
-        <h5 class="mb-3"><a [routerLink]="['/ionic']">Ionic</a></h5>
-        <p>Experience in Ionic  to perform fast on the all of the latest mobile devices.</p>
+    <div class="serv-box p-lg-5 p-sm-4 p-4 pt-0 pt-sm-0 pt-lg-0" [routerLink]="['/ionic']">
+        <div class="serv-i s-icon5"><a>icon5</a></div>
+        <h5 class="mb-3">Ionic</h5>
+        <p> {{ionic | WordcountPipe :10}}</p>
                  </div>
-          <div class="serv-box g-col-12 g-col-md-4 p-lg-5 p-sm-4 p-4 pt-0 pt-sm-0 pt-lg-0">
-            <div class="serv-i s-icon6"><a [routerLink]="['/ios-adroid']">icon6</a></div>
-            <h5 class="mb-3"><a [routerLink]="['/ios-adroid']">Android and IOS</a></h5>
-            <p>We create sleek, user-friendly apps for Apple devices, taking advantage of the iOS platform's features and the extensive iOS user base.</p>
+          <div class="serv-box p-lg-5 p-sm-4 p-4 pt-0 pt-sm-0 pt-lg-0"  [routerLink]="['/ios-android']">
+            <div class="serv-i s-icon6"><a>icon6</a></div>
+            <h5 class="mb-3">Android and IOS</h5>
+            <p>{{ ios | WordcountPipe :10}}</p>
                          </div>
+
   </div>
 
 </div>
@@ -112,9 +117,9 @@
     
     <div class="row d-flex align-items-center">
      
-    <div class="col-lg-6 col-md-6 col-12 mission-box p-lg-5 p-40 bc-gray text-white text-lg-start text-md-center text-center">
+    <div class="col-lg-6 col-md-6 col-12 mission-box p-lg-5 p-4 p-40 bc-gray text-white text-lg-start text-md-center text-center">
       <h2>Our Mission</h2>
-     <p>Our mission is simple: to empower businesses and individuals with the digital tools they need to succeed in the online landscape. We believe that a well-designed website is more than just a digital presence; it's a powerful asset that can help you connect with your audience, showcase your brand, and achieve your goals.</p>
+     <p>Our mission is simple to empower businesses and individuals with the digital tools they need to succeed in the online landscape. We believe that a well-designed website is more than just a digital presence; it's a powerful asset that can help you connect with your audience, showcase your brand, and achieve your goals.</p>
     </div>
     <div class="col-lg-6 col-md-6 col-12">
       <div class="miss-img">
@@ -127,15 +132,4 @@
 
     </div>
     </section>
-    <ngb-carousel>
-      <ng-template ngbSlide>
-        <img src="image1.jpg" alt="Slide 1">
-      </ng-template>
-      <ng-template ngbSlide>
-        <img src="image2.jpg" alt="Slide 2">
-      </ng-template>
-      <!-- Add more ngbSlide templates for additional slides -->
-    </ngb-carousel>
-
-
 

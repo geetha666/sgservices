@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./aboutus.component.scss']
 })
 export class AboutusComponent {
-
+  scrollToTop() {
+    window.scrollTo(0, 0);
+  }
 }

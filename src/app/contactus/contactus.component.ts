@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
 
 @Component({
@@ -8,11 +8,12 @@ import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
   styleUrls: ['./contactus.component.scss']
 })
 export class ContactusComponent {
-  geethaform : FormGroup
+  geethaform :any= FormGroup
   constructor(public formbuilder:FormBuilder) {
     this.geethaform = formbuilder.group(
       {name :['', Validators.required ],
-       email : ['', Validators.required ],
+       email :new FormControl('', 
+    Validators.compose( [Validators.pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"), Validators.required])),
        phone : ['', Validators.required ],
        msg : ['', Validators.required ],
 
