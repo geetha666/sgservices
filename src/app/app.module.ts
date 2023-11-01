@@ -18,7 +18,7 @@ import { IonicComponent } from './inner-pages/ionic/ionic.component';
 import { IosAdComponent } from './inner-pages/ios-ad/ios-ad.component';
 import { PsdHtmlComponent } from './inner-pages/psd-html/psd-html.component';
 import { SinglepageComponent } from './inner-pages/singlepage/singlepage.component';
-import { SlickCarouselModule } from 'ngx-slick-carousel';
+
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { WordcountPipe } from './pipes/wordcount.pipe';
 
@@ -48,7 +48,7 @@ import { WordcountPipe } from './pipes/wordcount.pipe';
     FormsModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
-    SlickCarouselModule,
+   
     NgbModule
     
   ],

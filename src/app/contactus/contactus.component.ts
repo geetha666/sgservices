@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { Meta } from '@angular/platform-browser';
 import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
 
 @Component({
@@ -8,8 +9,15 @@ import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
   styleUrls: ['./contactus.component.scss']
 })
 export class ContactusComponent {
+
+
+
+  
   geethaform :any= FormGroup
-  constructor(public formbuilder:FormBuilder) {
+  constructor(public formbuilder:FormBuilder, public meta: Meta) {
+    this.meta.updateTag({ name: 'description', content: "Contact Us if you want any information" });
+    this.meta.updateTag({ property: 'og:title', content: "Contact Us" });
+
     this.geethaform = formbuilder.group(
       {name :['', Validators.required ],
        email :new FormControl('', 
