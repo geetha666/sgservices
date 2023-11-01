@@ -1,6 +1,4 @@
 import { AfterViewInit, Component } from '@angular/core';
-import { auto } from '@popperjs/core';
-import * as $ from 'jquery';
 import 'owl.carousel';
 declare interface JQuery {
   owlCarousel(options?: any): JQuery;

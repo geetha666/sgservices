@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { SitemapComponent } from './sitemap/sitemap.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { HomeComponent } from './home/home.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
@@ -13,7 +12,6 @@ import { IonicComponent } from './inner-pages/ionic/ionic.component';
 import { IosAdComponent } from './inner-pages/ios-ad/ios-ad.component';
 
 const routes: Routes = [
-  {path:'sitemap.xml', component:SitemapComponent},
   {path:'contact',component:ContactusComponent},
   {path:'home',component:HomeComponent},
   {path:'about',component:AboutusComponent},
@@ -30,7 +28,9 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {
+    initialNavigation: 'enabledBlocking'
+})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
