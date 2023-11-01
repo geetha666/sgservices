@@ -1,33 +1,43 @@
-import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import * as fs from 'fs';
+import { SitemapStream, streamToPromise } from 'sitemap';
+import { createGzip } from 'zlib';
 
-@Component({
-  selector: 'app-sitemap',
-  template: '',
-})
-export class SitemapComponent implements OnInit {
-  constructor(private router: Router) {}
+async function generateSitemap() {
+  const sitemap = new SitemapStream({ hostname: 'https://softgenics.online' });
+  const writeStream = createGzip();
 
-  ngOnInit() {
-    const routes = this.router.config.filter(route => route.path !== '**'); // Exclude wildcard routes
-    const sitemapEntries = routes.map(route => ({
-      loc: `https://softgenics.online/${route.path}`, // Update with your domain
-      changefreq: 'monthly', // Modify as needed
-      priority: 0.8, // Modify as needed
-    }));
-    const sitemapXml = this.generateSitemapXml(sitemapEntries);
-    console.log(sitemapXml);
-    // You can also save this XML to a file or send it to the client upon a specific route request.
-  }
+  // Define your website's URLs
+  const urls = [
+    { url: '/', changefreq: 'daily', priority: 1.0 },
+    { url: '/about', changefreq: 'weekly', priority: 0.8 },
+    { url: '/contact', changefreq: 'monthly', priority: 0.6 },
+    { url: '/services', changefreq: 'weekly', priority: 0.8 },
+    { url: '/angular', changefreq: 'monthly', priority: 0.6 },
+    { url: '/psd-html', changefreq: 'monthly', priority: 0.6 },
+    { url: '/wordpress', changefreq: 'monthly', priority: 0.6 },
+    { url: '/singlepage', changefreq: 'monthly', priority: 0.6 },
+    { url: '/ionic', changefreq: 'monthly', priority: 0.6 },
 
-  generateSitemapXml(entries: any[]): string {
-    // Create and return the sitemap XML string
-    const urls = entries
-      .map(entry => `<url><loc>${entry.loc}</loc><changefreq>${entry.changefreq}</changefreq><priority>${entry.priority}</priority></url>`)
-      .join('\n');
-    return `<?xml version="1.0" encoding="UTF-8"?>
-    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-      ${urls}
-    </urlset>`;
-  }
+
+
+
+
+    // Add more URLs as needed
+  ];
+
+  // Add URLs to the sitemap
+  urls.forEach((url) => {
+    sitemap.write(url);
+  });
+
+  // End the sitemap
+  sitemap.end();
+
+  // Create and save the sitemap.xml.gz file
+  const xml = await streamToPromise(sitemap).then((data) => data.toString());
+  fs.writeFileSync('sitemap.xml.gz', xml);
 }
+
+generateSitemap().then(() => {
+  console.log('Sitemap generated successfully.');
+});

@@ -1,5 +1,4 @@
 import { AfterViewInit, Component } from '@angular/core';
-
 import 'owl.carousel';
 declare interface JQuery {
   owlCarousel(options?: any): JQuery;
