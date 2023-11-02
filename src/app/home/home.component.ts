@@ -16,10 +16,11 @@ export class HomeComponent implements AfterViewInit {
 
   customOptions: OwlOptions = {
     loop: true,
-    mouseDrag: false,
-    touchDrag: false,
+    mouseDrag: true,
+    touchDrag: true,
     pullDrag: false,
     dots: false,
+    margin:15,
     navSpeed: 700,
     autoplay: true,
     navText: ['', ''],
