@@ -17,46 +17,55 @@
 <section class="page-section2 d-flex align-items-center clearfix bc-light">
 <div class="container">
 <h2 class="section-heading text-center">Our Services</h2>
-<div  class="grid services-slide owl-carousel">
- 
 
+<owl-carousel-o [options]="customOptions">
+  <ng-template carouselSlide>
     <div class="serv-box p-lg-5 p-sm-4 p-4 pt-0 pt-sm-0 pt-lg-0" [routerLink]="['/psd-html']">
       <div class="serv-i s-icon1"><a>icon1</a></div>
       <h5 class="mb-3">PSD to HTML Conversion</h5>
       <p>{{psd | WordcountPipe :10}}</p>
          </div>
 
+  </ng-template>  
+  <ng-template carouselSlide>
     <div class="serv-box p-lg-5 p-sm-4 p-4 pt-0 pt-sm-0 pt-lg-0" [routerLink]="['/wordpress']">
-        <div class="serv-i s-icon2"><a >icon2</a></div>
-      <h5 class="mb-3">WordPress Development</h5>
-      <p>{{wordpress | WordcountPipe :10}} </p>
-         </div>
-
+      <div class="serv-i s-icon2"><a >icon2</a></div>
+    <h5 class="mb-3">WordPress Development</h5>
+    <p>{{wordpress | WordcountPipe :10}} </p>
+       </div>
+  </ng-template>  
+  <ng-template carouselSlide>
     <div class="serv-box p-lg-5 p-sm-4 p-4 pt-0 pt-sm-0 pt-lg-0" [routerLink]="['/angular']">
-        <div class="serv-i s-icon3"><a>icon3</a></div>
-      <h5 class="mb-3">Angular Web Development</h5>
-      <p> {{angular | WordcountPipe :10}}</p>
-         </div>
+      <div class="serv-i s-icon3"><a>icon3</a></div>
+    <h5 class="mb-3">Angular Web Development</h5>
+    <p> {{angular | WordcountPipe :10}}</p>
+       </div>
 
-        
-    
+      
+  </ng-template>  
+  <ng-template carouselSlide>
     <div class="serv-box p-lg-5 p-sm-4 p-4 pt-0 pt-sm-0 pt-lg-0" [routerLink]="['/singlepage']">
-        <div class="serv-i s-icon4"><a>icon4</a></div>
-      <h5 class="mb-3">Single Page Application</h5>
-      <p> {{ single| WordcountPipe :10}}</p>
-         </div>
+      <div class="serv-i s-icon4"><a>icon4</a></div>
+    <h5 class="mb-3">Single Page Application</h5>
+    <p> {{ single| WordcountPipe :10}}</p>
+       </div>
+  </ng-template>  
+  <ng-template carouselSlide>
     <div class="serv-box p-lg-5 p-sm-4 p-4 pt-0 pt-sm-0 pt-lg-0" [routerLink]="['/ionic']">
-        <div class="serv-i s-icon5"><a>icon5</a></div>
-        <h5 class="mb-3">Ionic</h5>
-        <p> {{ionic | WordcountPipe :10}}</p>
-                 </div>
-          <div class="serv-box p-lg-5 p-sm-4 p-4 pt-0 pt-sm-0 pt-lg-0"  [routerLink]="['/ios-android']">
-            <div class="serv-i s-icon6"><a>icon6</a></div>
-            <h5 class="mb-3">Android and IOS</h5>
-            <p>{{ ios | WordcountPipe :10}}</p>
-                         </div>
+      <div class="serv-i s-icon5"><a>icon5</a></div>
+      <h5 class="mb-3">Ionic</h5>
+      <p> {{ionic | WordcountPipe :10}}</p>
+               </div>
+  </ng-template>  
+  <ng-template carouselSlide>
+    <div class="serv-box p-lg-5 p-sm-4 p-4 pt-0 pt-sm-0 pt-lg-0"  [routerLink]="['/ios-android']">
+      <div class="serv-i s-icon6"><a>icon6</a></div>
+      <h5 class="mb-3">Android and IOS</h5>
+      <p>{{ ios | WordcountPipe :10}}</p>
+                   </div>
+  </ng-template>  
 
-  </div>
+</owl-carousel-o>
 
 </div>
 

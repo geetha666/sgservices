@@ -14,7 +14,7 @@
                
                 <div class="form-input">
                   <label for="name">Name  </label>
-                  <input  type="text" formControlName="name" class="rounded-2 mb-2">
+                  <input  type="text" id="name" formControlName="name" name="name" class="rounded-2 mb-2">
                   <span class="text-danger"
                                 *ngIf="(geethaform.get('name').touched) && geethaform.get('name').errors?.required">
                                 Name is required
@@ -22,7 +22,7 @@
                 </div>
                 <div class="form-input">
                   <label for="email">Email </label>
-                  <input  type="email" formControlName="email" class="rounded-2 mb-2">
+                  <input  type="email" formControlName="email" id="email" name="email" class="rounded-2 mb-2">
                   <span class="text-danger"
                   *ngIf="(geethaform.get('email').touched) && geethaform.get('email').errors?.required">
                   
@@ -36,7 +36,7 @@
                 </div>
                 <div class="form-input">
                   <label for="phone">Phone Number </label>
-                  <input  type="number" formControlName="phone" class="rounded-2 mb-2">
+                  <input  type="number" formControlName="phone" id="phone" name="phone" class="rounded-2 mb-2">
                   <span class="text-danger"
                   *ngIf="(geethaform.get('phone').touched) && geethaform.get('phone').errors?.required">
                   Phone Number is required
@@ -44,7 +44,7 @@
                 </div>
                 <div class="form-input">
                   <label for="msg">Message </label>
-                  <textarea  formControlName="msg" class="rounded-2 mb-2"></textarea>
+                  <textarea  formControlName="msg" id="msg" name="msg" class="rounded-2 mb-2"></textarea>
                   <span class="text-danger"
                   *ngIf="(geethaform.get('msg').touched) && geethaform.get('msg').errors?.required">
                   Message is required

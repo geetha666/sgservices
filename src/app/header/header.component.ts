@@ -21,7 +21,7 @@ export class HeaderComponent {
   }
 
   ngAfterViewInit() {
-    let navbar:any = document.querySelector('.navbar');
-    new bootstrap.Collapse(navbar.querySelector('.navbar-collapse'));
+    // let navbar:any = document.querySelector('.navbar');
+    // new bootstrap.Collapse(navbar.querySelector('.navbar-collapse'));
   }
 }

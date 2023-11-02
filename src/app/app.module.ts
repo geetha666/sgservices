@@ -20,6 +20,7 @@ import { SinglepageComponent } from './inner-pages/singlepage/singlepage.compone
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { WordcountPipe } from './pipes/wordcount.pipe';
 import { LocationStrategy, PathLocationStrategy } from '@angular/common';
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 
 @NgModule({
@@ -46,9 +47,10 @@ import { LocationStrategy, PathLocationStrategy } from '@angular/common';
     FormsModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
-    NgbModule
+    NgbModule,
+    CarouselModule
   ],
-  providers: [    { provide: LocationStrategy, useClass: PathLocationStrategy }
+  providers: [    { provide: LocationStrategy, useClass: PathLocationStrategy }, { provide: 'isBrowser', useValue: true }
 ],
   bootstrap: [AppComponent]
 })

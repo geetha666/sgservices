@@ -44,7 +44,11 @@ margin-bottom: 10px;
 .text-black {
     color: #040a25 !important;
 }
-.form-input label{
+.form-input > label{
     color: #ffffff !important;
   
+}
+.form-floating>label{
+  color: #ffffff !important;
+
 }

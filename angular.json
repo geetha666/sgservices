@@ -27,12 +27,15 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/robots.txt",
+              "src/sitemap.xml"
             ],
             "styles": [
               "src/styles.scss",
-              "node_modules/bootstrap/dist/css/bootstrap.min.css"
-        
+              "node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.carousel.min.css",
+              "node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.theme.default.min.css"
+
             ],
             "scripts": [
               "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
@@ -53,11 +56,18 @@
                   "maximumError": "4kb"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "none"
             },
             "development": {
               "buildOptimizer": false,
-              "optimization": false,
+              "optimization": {
+                "scripts": true,
+                "styles": {
+                  "minify": true,
+                  "inlineCritical": false
+                  },
+                "fonts": true
+              },
               "vendorChunk": true,
               "extractLicenses": false,
               "sourceMap": true,
@@ -95,7 +105,9 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/robots.txt",
+              "src/sitemap.xml"
 
             ],
             "styles": [
@@ -131,11 +143,19 @@
           "configurations": {
             "development": {
               "browserTarget": "SoftGenics:build:development",
-              "serverTarget": "SoftGenics:server:development"
+              "serverTarget": "SoftGenics:server:development",
+              "optimization":false
             },
             "production": {
               "browserTarget": "SoftGenics:build:production",
-              "serverTarget": "SoftGenics:server:production"
+              "serverTarget": "SoftGenics:server:production",
+              "optimization": {
+                "scripts": true,
+                "styles": {
+                  "minify": true,
+                  "inlineCritical": false
+                }
+             }
             }
           },
           "defaultConfiguration": "development"
@@ -155,6 +175,7 @@
             "development": {
               "browserTarget": "SoftGenics:build:development",
               "serverTarget": "SoftGenics:server:development"
+              
             }
           },
           "defaultConfiguration": "production"

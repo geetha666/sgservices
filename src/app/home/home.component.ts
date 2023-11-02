@@ -1,5 +1,6 @@
 import { AfterViewInit, Component } from '@angular/core';
-import 'owl.carousel';
+import { OwlOptions } from 'ngx-owl-carousel-o';
+// import 'owl.carousel';
 declare interface JQuery {
   owlCarousel(options?: any): JQuery;
 }
@@ -13,6 +14,31 @@ declare interface JQuery {
 
 export class HomeComponent implements AfterViewInit {
 
+  customOptions: OwlOptions = {
+    loop: true,
+    mouseDrag: false,
+    touchDrag: false,
+    pullDrag: false,
+    dots: false,
+    navSpeed: 700,
+    autoplay: true,
+    navText: ['', ''],
+   responsive: {
+              0: {
+                  items: 1
+              },
+              767: {
+                  items: 2
+              },
+              1024: {
+                items: 3
+            },
+            
+    },
+    nav: true
+  }
+
+
 psd :any ="Transform your creative designs into functional web pages with our PSD to HTML conversion service";
 wordpress :any="Harness the power of WordPress for your web presence.We customize our WordPress development services"
 angular : any="Leverage the power of Angular to build dynamic and interactive web applications"
@@ -22,29 +48,31 @@ ios:any="We create sleek, user-friendly apps for Apple devices, taking advantage
 
 
   ngAfterViewInit() {
-    jQuery('.services-slide').owlCarousel({
-      loop: true,
-      autoplay: true,
-      autoplayTimeout: 3000,
-      autoplayHoverPause: true,
-      touchDrag: false,
-      mouseDrag: true,
-      nav: true,
-      margin: 15,
+
+ 
+  //   jQuery('.services-slide').owlCarousel({
+  //     loop: true,
+  //     autoplay: true,
+  //     autoplayTimeout: 3000,
+  //     autoplayHoverPause: true,
+  //     touchDrag: false,
+  //     mouseDrag: true,
+  //     nav: true,
+  //     margin: 15,
      
-      responsive: {
-          0: {
-              items: 1
-          },
-          767: {
-              items: 2
-          },
-          1024: {
-            items: 3
-        },
+  //     responsive: {
+  //         0: {
+  //             items: 1
+  //         },
+  //         767: {
+  //             items: 2
+  //         },
+  //         1024: {
+  //           items: 3
+  //       },
         
-      }
-  });
+  //     }
+  // });
   
 
   }
